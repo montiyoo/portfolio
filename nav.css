@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    z-index: 100;
+  }
+  
+  .navbar-left {
+    display: flex;
+  }
+  
+  .navbar-center {
+    text-align: center;
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+  }
+  
+  .navbar-icon {
+    width: auto;
+    height: 20px;
+    margin-left: 10px;
+    transition: all 0.5s;
+  }
+  
+  .navbar-icon:hover {
+    height: 25px;
+    padding: 5px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+  
+  .navbar-link:hover, .navbar-link-dropbtn:hover {
+    background-color: white;
+    color: black;
+    padding: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background-color:black;
+    right:20px;
+    color:black;
+    transition:all 0.2s
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px;
+    right:20px;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    right:20px;
+  }
+  .navbar-link-dropbtn {
+    background: none; 
+    border: none; 
+    color: white;
+    cursor: pointer;
+    padding-left:5px;
+    border-radius: 5px;
+    transition:all 0.5s;
+    background-color:transparent;
+  }
+  .animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
